@@ -2,17 +2,15 @@ import json
 
 class Card():
 
-    def __init__(self,at, de, ab):
+    def __init__(self,at, di, ab):
         self.attack = at
-        self.defense = de
-        self.ability = ab
-        for a in self.ability:
-            if a == "attaccante":
+        self.defense = di
+        self.skill = ab
+        for a in self.skill:
+            if a == "fighter":
                 self.attack +=1
-            if a == "difensore":
+            if a == "defender":
                 self.defense +=1
 
-
-
     def to_json(self):
-        return {"attack":self.attack, "defense":self.defense,"ability":self.ability } 
+        return {"attack":self.attack, "defense":self.defense,"skill":self.skill } 

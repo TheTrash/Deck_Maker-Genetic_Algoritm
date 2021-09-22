@@ -1,4 +1,5 @@
 Regole del gioco
+
 Le carte sono composte da tre componenti principali
 - attacco
 - difesa
@@ -16,7 +17,7 @@ e possono ripresentarsi più volte nella stessa carta. ( esempio Attacco, Attacc
 - Difensore : +1 alla difesa
 
  da applicare alle battaglie
-- Guaritore: +1 ai punti salute del giocatore
+- Esperto: +1 ai punti salute del giocatore
 - Roccaforte: +1 al valore difesa alla fine del round ( se ancora vivo )
 
  da implementare
@@ -24,10 +25,12 @@ e possono ripresentarsi più volte nella stessa carta. ( esempio Attacco, Attacc
         Da valutare se ha senso mettercela provando qualche partita
 
 
-Ogni giocatore ha un mazzo di 20 carte e 20 punti vita
+Ogni giocatore ha un mazzo di 20 carte e un contatore di punti vittoria
 ogni turno si pescano 3 carte e si mettono in campo 
 Si fanno combattere valutando rispettivamente attacco e punti vita
-Ogni carta che rimane in campo leva un punto vita all'avversario
+Ogni carta che rimane in campo genera un punto vittoria all'avversario
+
+Il primo che arriva a 'num' punti vittoria vince
 
 Svolgimento del combattimento:
 Ogni combattimento è diviso in round:

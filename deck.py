@@ -4,8 +4,8 @@ import copy as cp
 class Deck():
     
     def __init__(self, cards):
-        self.list = cards
-        self.active = cards
+        self.list = cp.deepcopy(cards)
+        self.active = cp.deepcopy(cards)
         self.scramble()
         self.discard = []
     
@@ -25,5 +25,6 @@ class Deck():
     
     def refill(self):
         self.active += self.discard
+        self.discard = []
 
 

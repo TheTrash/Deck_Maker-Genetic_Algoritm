@@ -5,8 +5,9 @@ import copy as cp
 deck1 = Deck([makeCard() for i in range(10)])
 deck2 = Deck([makeCard() for i in range(10)])
 
+
 # evaluation parameters
-life1, life2 = (0,0)
+points1, points2 = (0,0)
 total_battle = 0
 total_round = 0
 
@@ -24,24 +25,25 @@ def fight(c1,c2):
 def evaluate_board(b1,b2):
     r1,r2 = (0,0)
     for p1,p2 in zip(b1,b2):
-        if p1.defense > 0:
-            r1+=1
-        if p2.defense > 0:
-            r2+=1
+        r1+=evaluate_card(p1)
+        r2+=evaluate_card(p2)
     return r1,r2
  
-while(life1 < 20 and life2 < 20):
+def evaluate_card(c):
+    r = 0
+    if c.defense > 0:
+        r+=1
+        if c.skill == "expert":
+            print("expertizer")
+            r+=1
+    return r
+
+while(points1 < 20 and points2 < 20):
     board1 = cp.deepcopy(deck1.draw())
     board2 = cp.deepcopy(deck2.draw())
 
     position = [1,1,1]
     rund = 1
-    ''' evaluate the guaritore effect
-        if pos1.ability == "guaritore":
-            print("player1 +1 hp")
-        if pos2.ability == "guaritore":
-            print("player2 +1 hp")
-    '''
     print(position)
     print( f'battle {total_battle} ')
     while(sum(position) > 0):
@@ -53,6 +55,7 @@ while(life1 < 20 and life2 < 20):
                 position[i] = res
         rund +=1
         print(position)
+
     total_battle+=1
     # evaluate 
     # if p1 or p2 has "roccaforte" +1 hp
@@ -70,11 +73,13 @@ while(life1 < 20 and life2 < 20):
     for cd in board2:
         print(cd.to_json())
 
-    life1+=r1
-    life2+=r2
+    points1+=r1
+    points2+=r2
     total_round += rund
-    print(life1,life2, total_round, total_battle)
+    print(points1,points2, total_round, total_battle)
 
 # for demo propouse print the deck
+print(len(deck1.list), len(deck1.active), len(deck1.discard))
+
 for ca in deck1.list:
     print(ca.to_json())
