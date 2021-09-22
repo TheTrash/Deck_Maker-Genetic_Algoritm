@@ -15,43 +15,36 @@ Si fa una stima della bontà del mazzo facendo combatterlo con gli altri mazzi /
 
 
 #  Il  Gioco
-
+## Carte
 Le carte sono composte da tre componenti principali
-- attacco
-- difesa
-- abilità
+    - attacco
+    - difesa
+    - abilità
 
-### Attacco:
-può variare da 2 a 7
-### Difesa:
-Può variare da 3 a 8
-### Abilità:
+Attacco:
+	può variare da 2 a 7
+Difesa:
+	Può variare da 3 a 8
+Abilità:
+
 Alcune carte potrebbero non avere abilità.
-Quelle che la possiedono attivano la propria abilità all'entrata della carta nel campo di gioco
-e possono ripresentarsi più volte nella stessa carta. ( esempio Attacco, Attacco )
+Quelle che la possiedono attivano la propria in alcuni momenti della partita
 
-- Attaccante : +1 all'attacco
-- Difensore : +1 alla difesa
-- Esperto: +1 ai punti salute del giocatore
+    Attaccante : +1 all'attacco
+    Difensore : +1 alla difesa
+    Esperto: +1 punto aggiuntivo se sopravvive alle battaglie
+    Guaritore: +1 al valore difesa alla fine del round ( se ancora vivo )
+    
+Le abilità possono ripresentarsi più volte nella stessa carta. ( esempio Attacco, Attacco fornirà + 2 all'attacco base della carta )
 
-
- Da implementare
-- Caotico: aggiungi le tue carte distrutte al mazzo e rimischialo  UNICA
-        Da valutare se ha senso mettercela provando qualche partita
-- Roccaforte: +1 al valore difesa alla fine del round ( se ancora vivo )
-
-
-Ogni giocatore ha un mazzo di 20 carte e un contatore di punti vittoria
-ogni turno si pescano 3 carte e si mettono in campo 
-Si fanno combattere valutando rispettivamente attacco e punti vita
+## Regole
+Ogni giocatore ha un mazzo di 10 carte e un contatore di punti vittoria ogni turno si pescano 3 carte e si mettono in campo 
+Si fanno combattere valutando rispettivamente attacco e punti vita 
 Ogni carta che rimane in campo genera un punto vittoria all'avversario
 
-Il primo che arriva a 'num' punti vittoria vince
+Il primo che arriva a 20 punti vittoria vince
+Svolgimento del combattimento ( Turno ): 
+Ogni combattimento è diviso in round: 
+In un round ogni carta combatte con quella che ha davanti se al termine del round entrambe le carte hanno ancora punti difesa si passa al round successivo
 
-Svolgimento del combattimento:
-Ogni combattimento è diviso in round:
-In un round ogni carta combatte con quella che ha davanti finché una delle due ( o entrambe ) non rimane con difesa <= a zero
-se al termine del round entrambe le carte hanno ancora punti difesa si passano al round successivo
-
-
-Quando le carte del mazzo finiscono, esso si rimescola e si continua la partita
+Quando le carte del mazzo finiscono, esso si rimescola e si continua la partita.
