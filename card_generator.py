@@ -1,6 +1,6 @@
 #card card management
 import random as rnd
-from card import Card
+from CardGame.card import Card
 import json
 
 collection_len = 20

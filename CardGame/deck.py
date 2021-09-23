@@ -1,5 +1,4 @@
-import random as rnd
-import copy as cp
+import CardGame
 
 class Deck():
     

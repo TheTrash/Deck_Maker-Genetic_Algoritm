@@ -1,11 +1,11 @@
-import copy as cp
+import CardGame
 
 class Game():
     total_battle = 0
     total_round = 0
     def __init__(self,d1,d2,max_point=20):
-        self.deck1 = cp.deepcopy(d1)
-        self.deck2 = cd.deepcopy(d2)
+        self.deck1 = Deck(cp.deepcopy(d1))
+        self.deck2 = Deck(cp.deepcopy(d2))
         self.point1 = 0
         self.point2 = 0
         self.max_point = max_point
@@ -13,7 +13,7 @@ class Game():
         ## make the player with deck
         ## use deep copy for prevent to modify the deck
     def match(self):
-        while (self.point1 < self.max_point and point2 < self.max_point):
+        while (self.point1 < self.max_point and self.point2 < self.max_point):
             board1 = cp.deepcopy(self.deck1.draw())
             board2 = cp.deepcopy(self.deck2.draw())
             position = [1,1,1]

@@ -1,5 +1,3 @@
-import json
-
 class Card():
 
     def __init__(self,at, di, ab):
