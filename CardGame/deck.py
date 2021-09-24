@@ -1,9 +1,8 @@
-import CardGame
+import copy as cp
+import numpy.random as rnd
 
-class Deck():
-    
+class Deck:
     def __init__(self, cards):
-        self.list = cp.deepcopy(cards)
         self.active = cp.deepcopy(cards)
         self.scramble()
         self.discard = []
@@ -11,7 +10,7 @@ class Deck():
     def draw(self):
         board = []
         if len(self.active) < 3:
-            self.refill()
+            self.refill() 
         for i in range(3):
             c = self.active.pop()
             board.append(c)
@@ -25,5 +24,4 @@ class Deck():
     def refill(self):
         self.active += self.discard
         self.discard = []
-
-
+        self.scramble()

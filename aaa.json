@@ -1,90 +1,6 @@
 [
  {
-  "attack":0,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
   "attack":1,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
   "defense":7,
   "skill":[
    "none"
@@ -92,84 +8,35 @@
  },
  {
   "attack":7,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
   "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":11,
   "skill":[
    "esperto"
   ]
  },
  {
-  "attack":5,
-  "defense":5,
+  "attack":1,
+  "defense":4,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":2,
-  "defense":5,
+  "attack":0,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":3,
   "skill":[
    "none"
   ]
@@ -183,63 +50,14 @@
  },
  {
   "attack":6,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
   "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":9,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":11,
   "skill":[
    "none"
   ]
@@ -248,25 +66,18 @@
   "attack":0,
   "defense":6,
   "skill":[
-   "esperto"
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":9,
+  "skill":[
+   "none"
   ]
  },
  {
   "attack":3,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
   "defense":8,
   "skill":[
    "none"
@@ -274,90 +85,76 @@
  },
  {
   "attack":1,
-  "defense":4,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":8,
   "skill":[
    "none"
   ]
  },
  {
   "attack":2,
-  "defense":7,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":4,
   "skill":[
    "none"
   ]
  },
  {
   "attack":4,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
   "defense":4,
   "skill":[
    "none"
@@ -365,203 +162,35 @@
  },
  {
   "attack":0,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":9,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":9,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
   "defense":4,
   "skill":[
    "difensore"
   ]
  },
  {
-  "attack":3,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
   "attack":1,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
   "defense":3,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":0,
-  "defense":7,
+  "attack":7,
+  "defense":2,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":6,
-  "defense":4,
+  "attack":2,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":10,
   "skill":[
    "none"
   ]
@@ -574,22 +203,71 @@
   ]
  },
  {
-  "attack":7,
-  "defense":10,
+  "attack":6,
+  "defense":9,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":0,
-  "defense":11,
+  "attack":2,
+  "defense":3,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":7,
+  "attack":6,
+  "defense":5,
+  "skill":[
+   "esperto"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
   "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":7,
   "skill":[
    "none"
   ]
@@ -602,63 +280,56 @@
   ]
  },
  {
-  "attack":6,
-  "defense":6,
+  "attack":7,
+  "defense":8,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":4,
-  "defense":5,
+  "attack":3,
+  "defense":3,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":4,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":7,
+  "attack":3,
+  "defense":11,
   "skill":[
    "none"
   ]
  },
  {
   "attack":2,
-  "defense":5,
+  "defense":3,
   "skill":[
    "none"
   ]
  },
  {
   "attack":2,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
   "defense":2,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":6,
-  "defense":7,
+  "attack":7,
+  "defense":11,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":0,
+  "attack":2,
   "defense":2,
   "skill":[
    "none"
@@ -672,42 +343,112 @@
   ]
  },
  {
-  "attack":7,
+  "attack":4,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
   "defense":3,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":7,
+  "attack":1,
   "defense":9,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":7,
-  "defense":10,
+  "attack":3,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":3,
   "skill":[
    "none"
   ]
  },
  {
   "attack":4,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
   "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":9,
   "skill":[
    "attaccante"
   ]
  },
  {
-  "attack":1,
-  "defense":8,
+  "attack":2,
+  "defense":6,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
+  "attack":1,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
   "defense":2,
   "skill":[
    "none"
@@ -715,34 +456,6 @@
  },
  {
   "attack":6,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
   "defense":5,
   "skill":[
    "none"
@@ -750,110 +463,19 @@
  },
  {
   "attack":0,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
   "defense":9,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":5,
-  "skill":[
-   "attaccante"
-  ]
- },
- {
-  "attack":0,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
   "attack":2,
   "defense":6,
   "skill":[
@@ -861,127 +483,71 @@
   ]
  },
  {
-  "attack":6,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":4,
+  "attack":1,
+  "defense":8,
   "skill":[
    "difensore"
   ]
  },
  {
-  "attack":5,
-  "defense":5,
+  "attack":7,
+  "defense":7,
+  "skill":[
+   "difensore"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":3,
   "skill":[
    "none"
   ]
  },
  {
   "attack":2,
-  "defense":3,
+  "defense":7,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":0,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
+  "attack":2,
   "defense":4,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
+  "attack":0,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
   "defense":3,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
-  "defense":3,
+  "attack":4,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":11,
   "skill":[
    "none"
   ]
@@ -989,104 +555,6 @@
  {
   "attack":7,
   "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":5,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":10,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":3,
-  "skill":[
-   "difensore"
-  ]
- },
- {
-  "attack":0,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":3,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":11,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":2,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":8,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":1,
-  "defense":7,
   "skill":[
    "none"
   ]
@@ -1099,6 +567,48 @@
   ]
  },
  {
+  "attack":7,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
   "attack":6,
   "defense":2,
   "skill":[
@@ -1106,7 +616,140 @@
   ]
  },
  {
+  "attack":0,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
   "attack":7,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":10,
+  "skill":[
+   "difensore"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
   "defense":7,
   "skill":[
    "none"
@@ -1121,7 +764,56 @@
  },
  {
   "attack":3,
-  "defense":3,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":6,
   "skill":[
    "none"
   ]
@@ -1135,28 +827,56 @@
  },
  {
   "attack":1,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":7,
+  "defense":5,
   "skill":[
    "none"
   ]
  },
  {
   "attack":3,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
   "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":10,
   "skill":[
    "none"
   ]
@@ -1170,48 +890,48 @@
  },
  {
   "attack":2,
-  "defense":5,
-  "skill":[
-   "difensore"
-  ]
- },
- {
-  "attack":3,
-  "defense":7,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":5,
-  "defense":11,
+  "defense":4,
   "skill":[
    "none"
   ]
  },
  {
   "attack":7,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
   "defense":9,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":3,
+  "attack":1,
   "defense":11,
-  "skill":[
-   "difensore"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":1,
+  "attack":5,
   "defense":6,
   "skill":[
    "none"
@@ -1219,14 +939,35 @@
  },
  {
   "attack":4,
-  "defense":2,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":4,
   "skill":[
    "none"
   ]
  },
  {
   "attack":2,
-  "defense":2,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":4,
   "skill":[
    "none"
   ]
@@ -1240,7 +981,238 @@
  },
  {
   "attack":3,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
   "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":3,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":3,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":6,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":6,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":5,
+  "defense":10,
   "skill":[
    "none"
   ]
@@ -1253,64 +1225,99 @@
   ]
  },
  {
-  "attack":5,
+  "attack":0,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":6,
+  "skill":[
+   "difensore"
+  ]
+ },
+ {
+  "attack":0,
   "defense":6,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":4,
+  "attack":6,
   "defense":7,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":6,
-  "defense":2,
+  "attack":4,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":5,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":7,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":4,
   "skill":[
    "esperto"
   ]
  },
  {
-  "attack":4,
-  "defense":9,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
-  "defense":2,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":3,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":4,
-  "defense":4,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":6,
+  "attack":1,
   "defense":10,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":4,
-  "defense":6,
+  "attack":2,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":10,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
+  "defense":11,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":1,
+  "defense":2,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":7,
+  "defense":11,
   "skill":[
    "none"
   ]
@@ -1319,40 +1326,61 @@
   "attack":4,
   "defense":3,
   "skill":[
-   "difensore"
+   "none"
   ]
  },
  {
-  "attack":4,
-  "defense":11,
+  "attack":7,
+  "defense":5,
   "skill":[
    "none"
   ]
  },
  {
   "attack":3,
+  "defense":8,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":2,
+  "defense":4,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":4,
+  "defense":9,
+  "skill":[
+   "none"
+  ]
+ },
+ {
+  "attack":0,
   "defense":6,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":6,
-  "defense":10,
+  "attack":2,
+  "defense":7,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
-  "defense":11,
+  "attack":3,
+  "defense":4,
   "skill":[
    "none"
   ]
  },
  {
-  "attack":5,
-  "defense":6,
+  "attack":7,
+  "defense":5,
   "skill":[
    "none"
   ]
@@ -1365,36 +1393,8 @@
   ]
  },
  {
-  "attack":5,
+  "attack":0,
   "defense":7,
-  "skill":[
-   "difensore"
-  ]
- },
- {
-  "attack":4,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":6,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":7,
-  "defense":9,
-  "skill":[
-   "none"
-  ]
- },
- {
-  "attack":0,
-  "defense":10,
   "skill":[
    "none"
   ]

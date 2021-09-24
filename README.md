@@ -33,7 +33,6 @@ Quelle che la possiedono attivano la propria in alcuni momenti della partita
     Attaccante : +1 all'attacco
     Difensore : +1 alla difesa
     Esperto: +1 punto aggiuntivo se sopravvive alle battaglie
-    Guaritore: +1 al valore difesa alla fine del round ( se ancora vivo )
     
 Le abilità possono ripresentarsi più volte nella stessa carta. ( esempio Attacco, Attacco fornirà + 2 all'attacco base della carta )
 
