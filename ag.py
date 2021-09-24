@@ -1,15 +1,14 @@
 import numpy.random as rnd
 
 class algoritmo_genetico:
-    
-    def __init__(self,prob, game,nelem=20,p_cross=0.9,p_mut=0.05,elit=True,verbose=False):
+    def __init__(self,prob,seed,nelem=20, p_cross=0.9, p_mut=0.05,elit=True,verbose=False):
         self.problem=prob
+        rnd.seed(seed)
         self.num_elem=nelem
         self.prob_cross=p_cross
         self.prob_mut=p_mut
         self.elit=elit
         self.verbose = verbose
-        self.game = game
 
     def run(self,num_gen,verbose=False):
         self.best_elem=(None, 0)
@@ -21,9 +20,8 @@ class algoritmo_genetico:
             figli=self.apply_crossover(coppie)
             self.apply_mutation(figli)
             self.update_population(figli)
-            if verbose:
-                print("generazione",g+1,"miglior individuo corrente", 
-                self.fo[self.i_best],"miglior individuo di  sempre",self.best_elem[1])
+            #if self.verbose:
+            #    print("generazione",g+1,"miglior individuo corrente con fitness", self.fo[self.i_best])
         return self.best_elem
 
     
@@ -56,7 +54,7 @@ class algoritmo_genetico:
         self.fo = [0]*self.num_elem
         for i in range(self.num_elem):
             self.pop[i]=self.problem.generate_solution()
-            self.fo[i]=self.problem.evaluate(self.pop[i])
+            self.fo[i]=self.problem.evaluate_body(self.pop[i] ) + self.problem.evaluate_winrate(self.pop[i])
         self.update_best()
 
     def update_best(self):
@@ -91,7 +89,7 @@ class algoritmo_genetico:
         bestf = self.fo[self.i_best]
         self.pop=figli
         # valuta la nuova popolazione
-        self.fo=[self.problem.evaluate(p) for p in self.pop]
+        self.fo=[self.problem.evaluate_body(p) + self.problem.evaluate_winrate(p) for p in self.pop]
         if self.elit:
             j_worst=0
             for i in range(1,self.num_elem):
@@ -100,3 +98,5 @@ class algoritmo_genetico:
             self.pop[j_worst]=best
             self.fo[j_worst]=bestf
         self.update_best()
+
+
