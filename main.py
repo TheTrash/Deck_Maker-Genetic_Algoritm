@@ -6,21 +6,17 @@ import copy as cp
 import numpy.random as rnd
 from numpy import var, average, std
 
-seed=rnd.randint(500)
-coll_manager = CollectionManager()
+seed=35#rnd.randint(500)
 game = Game()
-prob = Problema(coll_manager,seed=seed)
 
-'''
-d1 = coll_manager.makeDeck()
-c1 = coll_manager.getCard(d1)
-print(c1)
-'''
+coll_manager = CollectionManager(collection_len=200,seed=seed)
 
-ag = algoritmo_genetico(prob, game,p_mut=0.5)
+prob = Problema(coll_manager,game,seed=seed)
+
+ag = algoritmo_genetico(prob,nelem=10,p_mut=0.5, seed=seed, verbose=True)
+
 ag.run(num_gen=500,verbose=True)
 print([i.to_json() for i in ag.best_elem[0]])
-
 
 
 
@@ -49,3 +45,4 @@ for i in range(len(pop)):
 
 print(result)
 '''
+

@@ -5,8 +5,9 @@ import copy as cp
 
 
 class Game:
-    def __init__(self,max_point=50):
+    def __init__(self,max_point=50, verbose=False):
         self.max_point = max_point
+        self.verbose = verbose
 
         ## make the  deck
         ## use deep copy for prevent to modify the deck
@@ -49,7 +50,7 @@ class Game:
         if c.defense > 0:
             r+=1
             if c.skill == "esperto":
-                if verbose: print("expertizer")
+                if self.verbose: print("expertizer")
                 r+=1
         return r  
   

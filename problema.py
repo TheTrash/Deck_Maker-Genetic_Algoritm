@@ -1,13 +1,16 @@
-import random as rnd
+import numpy.random as rnd
 # make deck
 from CardGame.card import Card
 
 class Problema:
-    def __init__(self,coll_manager,seed=35):
+    def __init__(self,coll_manager,game,seed, len_eval_set=5,):
         rnd.seed(seed)
+        self.game = game
         self.coll_manager = coll_manager
+        self.len_eval_set = len_eval_set 
+        self.test_deck_set = [ coll_manager.makeDeck() for i in range(len_eval_set) ]
 
-    def evaluate(self, d):
+    def evaluate_body(self, d):
         # for now we evaluate the body medium of the deck
         total_body = 0
         for c in range(len(d)):
@@ -22,7 +25,20 @@ class Problema:
         # make some calculus : body((attack+def)/2) medio 
         #       and add some extra point for the abilities that arent already considered
         # HOW I CAN SAY THAT ONE DECK IS BETTER THAN ANOTHER? ( ratio of win )
-    
+    def evaluate_winrate(self,d):
+        win = 0
+        for i in range(self.len_eval_set):
+            tmp = 0
+            for t in range(3):
+                p1,p2,_ = self.game.match(d,self.test_deck_set[i])
+                if p1 > p2:
+                    tmp +=1
+            if tmp > 1:
+                win+=1
+        win_rate= win/self.len_eval_set
+
+        return win_rate
+
     def do_crossover(self,d1,d2):
         ## the deck has to be sorted?
         # crossover a due tagli 
@@ -40,13 +56,12 @@ class Problema:
             if rnd.random()<prob_mut:
                 old = deck.pop(i)
                 card = self.coll_manager.getCard(deck)
+                skill = list(rnd.choice(self.coll_manager.skill_list,1))
                 if card == None:
                     if old.skill == "attaccante":
                        card = Card(old.attack-1,old.defense, skill)
                     elif old.skill == "difensore":
                         card = Card(old.attack,old.defense-1,skill)
-                    else:
-                        skill = rnd.sample(self.coll_manager.skill_list,1)
                     card = Card(old.attack,old.defense,skill)
                 deck.insert(i,card)
         return deck
@@ -55,4 +70,5 @@ class Problema:
     def generate_solution(self):
         deck = self.coll_manager.makeDeck()
         return deck
-        
+    
+

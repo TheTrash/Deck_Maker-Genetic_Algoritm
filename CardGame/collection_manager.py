@@ -4,11 +4,12 @@ from CardGame.card import Card
 import copy
 
 class CollectionManager:
-    def __init__(self, collection_len = 200,deck_len=10, prob_mut=0.05, filename="my_collection.json"):
+    def __init__(self,collection_len, seed ,deck_len=10, prob_mut=0.05, filename="my_collection.json", ):
         self.collection_len = collection_len
         self.deck_len=deck_len
         self.filename = filename
-
+        self.seed = seed
+        rnd.seed(self.seed)
         self.skill_list = ["attaccante","difensore","esperto"]
         self.attack_list = [i for i in range(0,9)]
         self.body_list = [i  for i in range(2,12)]
