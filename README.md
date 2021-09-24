@@ -47,3 +47,20 @@ Ogni combattimento è diviso in round:
 In un round ogni carta combatte con quella che ha davanti se al termine del round entrambe le carte hanno ancora punti difesa si passa al round successivo
 
 Quando le carte del mazzo finiscono, esso si rimescola e si continua la partita.
+
+
+# TO DO
+* Impostare la generazione dei deck in modo che escano liste ordinate
+
+* Sistemare la mutazione con le rispettive probabilità:
+    possibile soluzione:\ 
+    lancio di una moneta\
+    + testa cambiare una carta ( se ordinato di pari valore del valore desiderato)
+    + croce cambiare la skill della carta
+
+* Ottimizzare il simulatore delle battaglie
+* Migliorare i commenti del codice
+* Scrivere un piccolo report
+### se ci rimane tempo
+* aggiungere un piccolo test di parametrizzazione
+* aggiungere un plot dell'evoluzione della popolazione
