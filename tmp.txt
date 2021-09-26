@@ -1,0 +1,23 @@
+selection tournament with fitness on winrate
+
+nuovo best deck 7.1 trovato alla 0
+nuovo best deck 7.15 trovato alla 1
+nuovo best deck 7.2 trovato alla 23
+nuovo best deck 7.25 trovato alla 24
+nuovo best deck 7.5 trovato alla 47
+nuovo best deck 7.85 trovato alla 48
+nuovo best deck 8.4 trovato alla 56
+nuovo best deck 8.5 trovato alla 64
+nuovo best deck 8.6 trovato alla 84
+nuovo best deck 8.7 trovato alla 86
+nuovo best deck 8.75 trovato alla 118
+time to complete:  100.323701767
+
+selection with fitness on body
+nuovo best deck 7.1 trovato alla 0
+nuovo best deck 7.2 trovato alla 8
+nuovo best deck 7.55 trovato alla 23
+nuovo best deck 7.85 trovato alla 34
+nuovo best deck 7.9 trovato alla 99
+nuovo best deck 8.1 trovato alla 266
+time to complete:  0.278330689

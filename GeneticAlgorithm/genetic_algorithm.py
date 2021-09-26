@@ -10,6 +10,7 @@ class algoritmo_genetico:
         self.prob_mut=p_mut
         self.elit=elit
         self.verbose = verbose
+        self.history = [[],[]]
 
     def run(self,num_gen,verbose=False):
         self.best_elem=(None, 0)
@@ -21,8 +22,6 @@ class algoritmo_genetico:
             figli=self.apply_crossover(coppie)
             self.apply_mutation(figli)
             self.update_population(figli)
-            #if self.verbose:
-            #    print("generazione",g+1,"miglior individuo corrente con fitness", self.fo[self.i_best])
         return self.best_elem
 
     
@@ -32,12 +31,12 @@ class algoritmo_genetico:
         # in fact here we want to make the couples for 
         # crossover operation
         # so the tournament is good
+
     def selection(self):
         coppie=[]
         fit=[1.0/(self.fo[i]+1) for i in range(self.num_elem)]
         sum_fit=sum(fit)
         prob=[f/sum_fit for f in fit]
-        print(prob)
         for i in range(self.num_elem):
             coppie.append(self.roulette_wheel(prob))
         return coppie
@@ -56,8 +55,7 @@ class algoritmo_genetico:
                         if p1 > p2:
                             win +=1
                     if win > 1:
-                        result[i]+=1
-        #score, pop = zip(*sorted(zip(result, self.pop)))        
+                        result[i]+=1     
         sum_win=sum(result)
         prob=[win/self.num_elem for win in result]
         for i in range(self.num_elem):
@@ -91,6 +89,8 @@ class algoritmo_genetico:
             self.best_elem=(self.pop[i_best],self.fo[i_best])
             if self.verbose:
                 print(f"nuovo best deck {self.fo[i_best]} trovato alla {self.gen}")
+                self.history[0].append(self.gen)
+                self.history[1].append(self.fo[i_best])
         self.i_best=i_best
     
     def apply_crossover(self, coppie):
@@ -125,5 +125,5 @@ class algoritmo_genetico:
         self.update_best()
 
     def evaluate(self,deck):
-        value = self.problem.evaluate_body(deck) #* self.weight[0]  + self.weight[1] * 10 * self.problem.evaluate_winrate(deck)
+        value = self.problem.evaluate_body(deck)
         return value
