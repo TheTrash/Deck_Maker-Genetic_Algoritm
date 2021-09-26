@@ -1,7 +1,7 @@
 import json
 import numpy.random as rnd
 from CardGame.card import Card
-import copy
+import copy as cp
 
 class CollectionManager:
     def __init__(self,collection_len, seed ,deck_len=10, prob_mut=0.05, filename="my_collection.json", ):
@@ -10,9 +10,9 @@ class CollectionManager:
         self.filename = filename
         self.seed = seed
         rnd.seed(self.seed)
-        self.skill_list = ["attaccante","difensore","esperto"]
-        self.attack_list = [i for i in range(0,9)]
-        self.body_list = [i  for i in range(2,12)]
+        self.skill_list = ["none","attaccante","difensore","esperto"]
+        self.attack_list = [i for i in range(0,10)]
+        self.body_list = [i  for i in range(2,13)]
         self.prob_mut = prob_mut
         #initialize collection
         self.collection_list = []
@@ -32,9 +32,9 @@ class CollectionManager:
     def makeCard(self):
         de = self.body_list[rnd.randint(len(self.body_list))]
         at = self.attack_list[rnd.randint(len(self.attack_list))]
-        ab = ["none"]
+        ab = "none"
         if rnd.random() < self.prob_mut:
-            ab = [self.skill_list[rnd.randint(len(self.skill_list))]]
+            ab = self.getNewSkill(ab)
         cd = Card(at,de,ab)
         return cd
 
@@ -49,9 +49,11 @@ class CollectionManager:
         json.dump(data,out_file, indent=1, separators=(',', ':'))
         return data
 
-    def getCard(self,deck):
+    def getCard(self):
         card = self.collection_list[rnd.randint(self.collection_len)]
-        if card not in deck:
-            return card
-        else:
-            return None
+        return card
+    
+    def getNewSkill(self,s):
+        l = cp.copy(self.skill_list)
+        l.remove(s)
+        return list(rnd.choice(l,1))[0]

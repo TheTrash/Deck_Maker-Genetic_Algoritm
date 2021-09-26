@@ -50,17 +50,20 @@ Quando le carte del mazzo finiscono, esso si rimescola e si continua la partita.
 
 
 # TO DO
+* Ottimizzare il simulatore delle battaglie
 * Impostare la generazione dei deck in modo che escano liste ordinate
+* Migliorare i commenti del codice
+* Scrivere un piccolo report
 
-* Sistemare la mutazione con le rispettive probabilità:
+### se ci rimane tempo
+* aggiungere un piccolo test di parametrizzazione
+* aggiungere un plot dell'evoluzione della popolazione
+* to do dare dei pesi alle abilità
++
+
+### Fatti
+* Sistemare la mutazione con le rispettive probabilità:  
     possibile soluzione:\ 
     lancio di una moneta\
     + testa cambiare una carta ( se ordinato di pari valore del valore desiderato)
     + croce cambiare la skill della carta
-
-* Ottimizzare il simulatore delle battaglie
-* Migliorare i commenti del codice
-* Scrivere un piccolo report
-### se ci rimane tempo
-* aggiungere un piccolo test di parametrizzazione
-* aggiungere un plot dell'evoluzione della popolazione

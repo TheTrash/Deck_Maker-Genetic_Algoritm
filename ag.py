@@ -1,11 +1,12 @@
 import numpy.random as rnd
 
 class algoritmo_genetico:
-    def __init__(self,prob,seed,nelem=20, p_cross=0.9, p_mut=0.05,elit=True,verbose=False):
+    def __init__(self,prob,seed,weight=[0.5,0,5],nelem=20, p_cross=0.9, p_mut=0.05,elit=True,verbose=False):
         self.problem=prob
         rnd.seed(seed)
         self.num_elem=nelem
         self.prob_cross=p_cross
+        self.weight=weight
         self.prob_mut=p_mut
         self.elit=elit
         self.verbose = verbose
@@ -16,7 +17,7 @@ class algoritmo_genetico:
         self.init_population()
         for g in range(num_gen):
             self.gen=g+1
-            coppie=self.selection()
+            coppie=self.selection_tournament()
             figli=self.apply_crossover(coppie)
             self.apply_mutation(figli)
             self.update_population(figli)
@@ -36,10 +37,34 @@ class algoritmo_genetico:
         fit=[1.0/(self.fo[i]+1) for i in range(self.num_elem)]
         sum_fit=sum(fit)
         prob=[f/sum_fit for f in fit]
+        print(prob)
         for i in range(self.num_elem):
             coppie.append(self.roulette_wheel(prob))
         return coppie
-        
+    
+    def selection_tournament(self):
+        coppie=[]
+        result= [0]*20
+        win = 0
+        for i in range(self.num_elem):
+            result[i]=0
+            win = 0
+            for j in range(self.num_elem):
+                if i != j :
+                    for t in range(3):
+                        p1,p2,_ = self.problem.game.match(self.pop[i],self.pop[j])
+                        if p1 > p2:
+                            win +=1
+                    if win > 1:
+                        result[i]+=1
+        #score, pop = zip(*sorted(zip(result, self.pop)))        
+        sum_win=sum(result)
+        prob=[win/self.num_elem for win in result]
+        for i in range(self.num_elem):
+            coppie.append(self.roulette_wheel(prob))
+        return coppie
+
+
     def roulette_wheel(self,prob):
         r=rnd.random()
         j=0
@@ -54,7 +79,7 @@ class algoritmo_genetico:
         self.fo = [0]*self.num_elem
         for i in range(self.num_elem):
             self.pop[i]=self.problem.generate_solution()
-            self.fo[i]=self.problem.evaluate_body(self.pop[i] ) + self.problem.evaluate_winrate(self.pop[i])
+            self.fo[i]=self.evaluate(self.pop[i])
         self.update_best()
 
     def update_best(self):
@@ -89,7 +114,7 @@ class algoritmo_genetico:
         bestf = self.fo[self.i_best]
         self.pop=figli
         # valuta la nuova popolazione
-        self.fo=[self.problem.evaluate_body(p) + self.problem.evaluate_winrate(p) for p in self.pop]
+        self.fo=[self.evaluate(p) for p in self.pop]
         if self.elit:
             j_worst=0
             for i in range(1,self.num_elem):
@@ -99,4 +124,6 @@ class algoritmo_genetico:
             self.fo[j_worst]=bestf
         self.update_best()
 
-
+    def evaluate(self,deck):
+        value = self.problem.evaluate_body(deck) #* self.weight[0]  + self.weight[1] * 10 * self.problem.evaluate_winrate(deck)
+        return value

@@ -1,6 +1,7 @@
 import numpy.random as rnd
 # make deck
 from CardGame.card import Card
+import copy as cp
 
 class Problema:
     def __init__(self,coll_manager,game,seed, len_eval_set=5,):
@@ -18,7 +19,7 @@ class Problema:
             for skill in d[c].skill:
                 skill_point += skill != "none"
             total_body += (d[c].attack + d[c].defense)/2 + skill_point
-        return total_body
+        return total_body/self.coll_manager.deck_len
 
         # the main doubt here is how to evaluate the deck?
         # fight against his-self n times
@@ -55,14 +56,20 @@ class Problema:
         for i in range(len(deck)):
             if rnd.random()<prob_mut:
                 old = deck.pop(i)
-                card = self.coll_manager.getCard(deck)
-                skill = list(rnd.choice(self.coll_manager.skill_list,1))
-                if card == None:
+                if rnd.random()<0.5:
+                    tmpCard = self.coll_manager.getCard()
+                    if tmpCard not in deck:
+                        card = Card(tmpCard.attack,tmpCard.defense,tmpCard.skill)
+                    else:
+                        card = Card(old.attack,old.defense, old.skill)
+                else:
+                    skill = self.coll_manager.getNewSkill(old.skill)
                     if old.skill == "attaccante":
                        card = Card(old.attack-1,old.defense, skill)
                     elif old.skill == "difensore":
                         card = Card(old.attack,old.defense-1,skill)
-                    card = Card(old.attack,old.defense,skill)
+                    else:
+                        card = Card(old.attack,old.defense,skill)
                 deck.insert(i,card)
         return deck
     
@@ -70,5 +77,6 @@ class Problema:
     def generate_solution(self):
         deck = self.coll_manager.makeDeck()
         return deck
-    
+
+
 

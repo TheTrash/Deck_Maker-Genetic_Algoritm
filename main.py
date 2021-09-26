@@ -6,14 +6,13 @@ import copy as cp
 import numpy.random as rnd
 from numpy import var, average, std
 
-seed=35#rnd.randint(500)
+seed=35#rnd.randint(500) #385
 game = Game()
 
 coll_manager = CollectionManager(collection_len=200,seed=seed)
-
 prob = Problema(coll_manager,game,seed=seed)
 
-ag = algoritmo_genetico(prob,nelem=10,p_mut=0.5, seed=seed, verbose=True)
+ag = algoritmo_genetico(prob,nelem=10,p_mut=0.5,weight=[1,0], seed=seed, verbose=True)
 
 ag.run(num_gen=500,verbose=True)
 print([i.to_json() for i in ag.best_elem[0]])
@@ -27,7 +26,7 @@ print([i.to_json() for i in ag.best_elem[0]])
 '''
 #tournament
 pop = [prob.generate_solution() for i in range(20)]
-fo = [prob.evaluate(pop[i]) for i in range(20)]
+fo = [prob.evaluate_body(pop[i]) for i in range(20)]
 print(fo)
 result= [0]*20
 win = 0
@@ -44,5 +43,7 @@ for i in range(len(pop)):
                 result[i]+=1
 
 print(result)
-'''
+tmp1, tmp2 = zip(*sorted(zip(result, fo)))
+print(tmp1,"\n",tmp2)
 
+'''
