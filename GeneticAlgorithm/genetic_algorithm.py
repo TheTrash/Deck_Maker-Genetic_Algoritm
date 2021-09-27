@@ -15,7 +15,7 @@ class algoritmo_genetico:
         else:
             self.selection = self.selection_tournament
 
-    def run(self,num_gen,verbose=False):
+    def run(self,num_gen):
         self.best_elem=(None, 0)
         self.gen=0
         self.init_population()
@@ -25,6 +25,8 @@ class algoritmo_genetico:
             figli=self.apply_crossover(coppie)
             self.apply_mutation(figli)
             self.update_population(figli)
+        self.history[0].append(self.gen)
+        self.history[1].append(self.best_elem[1])
         return self.best_elem
 
 
@@ -116,8 +118,8 @@ class algoritmo_genetico:
             self.best_elem=(self.pop[i_best],self.fo[i_best])
             if self.verbose:
                 print(f"nuovo best deck {self.fo[i_best]} trovato alla {self.gen}")
-                self.history[0].append(self.gen)
-                self.history[1].append(self.fo[i_best])
+            self.history[0].append(self.gen) 
+            self.history[1].append(self.fo[i_best])
         self.i_best=i_best
     
 
