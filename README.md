@@ -1,3 +1,7 @@
+# COME AVVIARE IL PROGETTO
+Modificare a piacere i parametri del file main.py
+O utilizzare il file parametrizzazione.py se si vuole avere una visione migliore del funzionamento.
+
 # Il progetto
 Lo scopo del progetto è quello di implementare un deck-builder di un proto-gioco di carte tramite un algoritmo genetico.
 
@@ -47,24 +51,3 @@ Ogni combattimento è diviso in round:
 In un round ogni carta combatte con quella che ha davanti se al termine del round entrambe le carte hanno ancora punti difesa si passa al round successivo
 
 Quando le carte del mazzo finiscono, esso si rimescola e si continua la partita.
-
-
-# TO DO
-* Impostare la generazione dei deck in modo che escano liste ordinate
-* Migliorare i commenti del codice
-* Scrivere un piccolo report
-
-### se ci rimane tempo
-* aggiungere un piccolo test di parametrizzazione
-* aggiungere un plot dell'evoluzione della popolazione
-* dare dei pesi alle abilità
-
-
-### Fatti
-* Sistemare la mutazione con le rispettive probabilità:  
-    possibile soluzione:\ 
-    lancio di una moneta\
-    + testa cambiare una carta ( se ordinato di pari valore del valore desiderato)
-    + croce cambiare la skill della carta
-    
-* Aggiunto il plot del grafico rispettivo all'esecuzione
