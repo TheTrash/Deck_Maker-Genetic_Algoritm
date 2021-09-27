@@ -1,16 +1,19 @@
 import numpy.random as rnd
 
 class algoritmo_genetico:
-    def __init__(self,prob,seed,weight=[0.5,0,5],nelem=20, p_cross=0.9, p_mut=0.05,elit=True,verbose=False):
+    def __init__(self,prob,seed,select="normal",nelem=20, p_cross=0.9, p_mut=0.05,elit=True,verbose=False):
         self.problem=prob
         rnd.seed(seed)
         self.num_elem=nelem
         self.prob_cross=p_cross
-        self.weight=weight
         self.prob_mut=p_mut
         self.elit=elit
         self.verbose = verbose
         self.history = [[],[]]
+        if select == "normal":
+            self.selection = self.selection_fit
+        else:
+            self.selection = self.selection_tournament
 
     def run(self,num_gen,verbose=False):
         self.best_elem=(None, 0)
@@ -18,21 +21,14 @@ class algoritmo_genetico:
         self.init_population()
         for g in range(num_gen):
             self.gen=g+1
-            coppie=self.selection_tournament()
+            coppie = self.selection()
             figli=self.apply_crossover(coppie)
             self.apply_mutation(figli)
             self.update_population(figli)
         return self.best_elem
 
-    
-        # here i've to call GAME object and play the match
-        # make an internal tournament seems a good way to 
-        # select best element 
-        # in fact here we want to make the couples for 
-        # crossover operation
-        # so the tournament is good
 
-    def selection(self):
+    def selection_fit(self):
         coppie=[]
         fit=[1.0/(self.fo[i]+1) for i in range(self.num_elem)]
         sum_fit=sum(fit)
@@ -57,7 +53,7 @@ class algoritmo_genetico:
                     if win > 1:
                         result[i]+=1     
         sum_win=sum(result)
-        prob=[win/self.num_elem for win in result]
+        prob=[win/sum_win for win in result]
         for i in range(self.num_elem):
             coppie.append(self.roulette_wheel(prob))
         return coppie
@@ -80,19 +76,7 @@ class algoritmo_genetico:
             self.fo[i]=self.evaluate(self.pop[i])
         self.update_best()
 
-    def update_best(self):
-        i_best = 0
-        for i in range(1,self.num_elem):
-            if self.fo[i]>self.fo[i_best]:
-                i_best=i
-        if self.fo[i_best]>self.best_elem[1]:
-            self.best_elem=(self.pop[i_best],self.fo[i_best])
-            if self.verbose:
-                print(f"nuovo best deck {self.fo[i_best]} trovato alla {self.gen}")
-                self.history[0].append(self.gen)
-                self.history[1].append(self.fo[i_best])
-        self.i_best=i_best
-    
+
     def apply_crossover(self, coppie):
         figli = []
         for i in range(0,self.num_elem,2):
@@ -113,7 +97,6 @@ class algoritmo_genetico:
         best = self.pop[self.i_best]
         bestf = self.fo[self.i_best]
         self.pop=figli
-        # valuta la nuova popolazione
         self.fo=[self.evaluate(p) for p in self.pop]
         if self.elit:
             j_worst=0
@@ -123,6 +106,20 @@ class algoritmo_genetico:
             self.pop[j_worst]=best
             self.fo[j_worst]=bestf
         self.update_best()
+
+    def update_best(self):
+        i_best = 0
+        for i in range(1,self.num_elem):
+            if self.fo[i]>self.fo[i_best]:
+                i_best=i
+        if self.fo[i_best]>self.best_elem[1]:
+            self.best_elem=(self.pop[i_best],self.fo[i_best])
+            if self.verbose:
+                print(f"nuovo best deck {self.fo[i_best]} trovato alla {self.gen}")
+                self.history[0].append(self.gen)
+                self.history[1].append(self.fo[i_best])
+        self.i_best=i_best
+    
 
     def evaluate(self,deck):
         value = self.problem.evaluate_body(deck)

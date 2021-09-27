@@ -55,16 +55,3 @@ best deck list
 {'attack': 9, 'defense': 11, 'skill': 'attaccante'}
 {'attack': 6, 'defense': 11, 'skill': 'difensore'}
 [[0, 14, 318, 478, 1375, 4275, 6465, 10263, 29852, 41361, 41851, 44896], [7.1, 7.6, 8.2, 8.35, 8.8, 8.85, 9.0, 9.05, 9.15, 9.2, 9.3, 9.45]]
-
-
-500 generations Selection Tournament                            50000 generations Selection Fitness
-{'attack': 7, 'defense': 10, 'skill': 'none'}                   {'attack': 7, 'defense': 12, 'skill': 'attaccante'}
-{'attack': 9, 'defense': 10, 'skill': 'none'}                   {'attack': 7, 'defense': 12, 'skill': 'attaccante'}
-{'attack': 9, 'defense': 11, 'skill': 'none'}                   {'attack': 6, 'defense': 11, 'skill': 'none'}
-{'attack': 7, 'defense': 11, 'skill': 'attaccante'}             {'attack': 8, 'defense': 6, 'skill': 'difensore'}
-{'attack': 9, 'defense': 8, 'skill': 'none'}                    {'attack': 7, 'defense': 9, 'skill': 'difensore'}
-{'attack': 8, 'defense': 6, 'skill': 'none'}                    {'attack': 7, 'defense': 10, 'skill': 'attaccante'
-{'attack': 6, 'defense': 12, 'skill': 'none'}                   {'attack': 8, 'defense': 9, 'skill': 'attaccante'}
-{'attack': 9, 'defense': 10, 'skill': 'difensore'}              {'attack': 8, 'defense': 9, 'skill': 'none'}
-{'attack': 5, 'defense': 11, 'skill': 'esperto'}                {'attack': 9, 'defense': 11, 'skill': 'attaccante'}
-{'attack': 9, 'defense': 12, 'skill': 'none'}                   {'attack': 6, 'defense': 11, 'skill': 'difensore'}

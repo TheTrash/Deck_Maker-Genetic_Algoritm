@@ -5,9 +5,9 @@ class Card():
         self.defense = di
         self.skill = ab
         for a in self.skill:
-            if a == "fighter":
+            if a == "attaccante":
                 self.attack +=1
-            if a == "defender":
+            if a == "difensore":
                 self.defense +=1
 
     def to_json(self):
