@@ -18,7 +18,7 @@ ag = algoritmo_genetico(prob,nelem=10, p_mut=0.5, select="normal", seed=seed, ve
 
 
 t = time.process_time()
-ag.run(num_gen=1000,verbose=True)
+ag.run(num_gen=1000)
 elapsed_time = time.process_time() - t
 print("time to complete: ",elapsed_time)
 print(ag.gen, "generations")
